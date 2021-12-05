@@ -1,6 +1,6 @@
-# byteorder
+# byteorder [![GoDoc](https://godoc.org/github.com/andig/byteorder?status.svg)](http://godoc.org/github.com/andig/byteorder)
 
-ByteOrder is a Go module for working with arbitrarily-ordered byte slices.
+`byteorder` is a Go module for working with arbitrarily-ordered byte slices.
 It is useful e.g. when dealing with Modbus wire formats.
 
 Installation:
@@ -17,3 +17,5 @@ Usage:
     // Output: 0x0201
 
 NOTE: `byteorder` is not optimized for performance. The conversion functions will allocate which may not be desirable in high-frequency code paths.
+
+In addition to the Go `binary.ByteOrder` implementation, this modules provides convenience functions for the [ioBroker.modbus](https://github.com/ioBroker/ioBroker.modbus) data types.
